@@ -1,0 +1,26 @@
+setting	value
+Language	en
+Location	jita
+buy method	buyMax
+sell method	sellMin
+tax %	0.0337
+broker %	0.005
+Sell modifier	-0.1
+decryptor	Augmentation Decryptor
+minimum svr	3
+additional maunfacture duration	-0.32
+additional maunfacture cost	0.0559
+additional copy duration	-0.363
+additional copy cost	0.0696
+additional ME duration	-0.363
+additional ME cost	0.036
+additional TE duration	-0.363
+additional TE cost	0.0355
+invention duration	-0.15
+invention cost	0.0696
+======================	======================
+Target Profit	0.06
+store	-0.06
+store type	sellMin
+buyback	0.03
+buyback type	buyMax

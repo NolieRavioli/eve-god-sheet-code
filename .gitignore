@@ -1,0 +1,10 @@
+~$Eve God Sheet.xlsm
+Eve God Sheet.xlsm
+
+/sde/
+/sde-csv/
+
+**/__pycache__/
+**/*.tmp
+/python code/eveHauler/data/*
+!/python code/eveHauler/data/.gitignore

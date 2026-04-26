@@ -1,0 +1,9 @@
+Decryptor Name	Probability Multiplier	Max Run Modifier	ME Modifier	PE Modifier
+Augmentation Decryptor	0.6	9	-2	2
+Optimized Augmentation Decryptor	0.9	7	2	0
+Symmetry Decryptor	1	2	1	8
+Process Decryptor	1.1	0	3	6
+Accelerant Decryptor	1.2	1	2	10
+Parity Decryptor	1.5	3	1	-2
+Attainment Decryptor	1.8	4	-1	4
+Optimized Attainment Decryptor	1.9	2	1	-2

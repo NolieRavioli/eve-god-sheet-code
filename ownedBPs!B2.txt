@@ -1,0 +1,33 @@
+=LET(
+
+  char, EVEONLINE.CHARACTER_BLUEPRINTS('Personal stats'!B2),
+
+  char_ids, char.type.id,
+  char_me, char.material_efficiency,
+  char_te, char.time_efficiency,
+  char_runs, char.runs,
+
+  char_keys, char_ids & "|" & char_me & "|" & char_te & "|" & char_runs,
+
+  char_filtered,
+    FILTER(char, MATCH(char_keys, char_keys, 0)=SEQUENCE(ROWS(char_keys))),
+
+  char_norm,
+    HSTACK(char_filtered.type.id, char_filtered.material_efficiency, char_filtered.time_efficiency, char_filtered.runs),
+
+  corp, EVEONLINE.CORPORATION_BLUEPRINTS('Personal stats'!B1),
+
+  corp_keys,
+    corp.type_id & "|" &
+    corp.material_efficiency & "|" &
+    corp.time_efficiency & "|" &
+    corp.runs,
+
+  corp_filtered,
+    FILTER(corp, MATCH(corp_keys, corp_keys, 0)=SEQUENCE(ROWS(corp_keys))),
+
+  corp_norm,
+    HSTACK(corp_filtered.type_id, corp_filtered.material_efficiency, corp_filtered.time_efficiency, corp_filtered.runs),
+
+  VSTACK(char_norm, corp_norm)
+)
